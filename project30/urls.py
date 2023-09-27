@@ -22,5 +22,11 @@ from app.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('registration/',registration,name='registration')
+    path('registration/',registration,name='registration'),
+    path('user_login/',user_login,name='user_login'),
+    path('home/',home,name='home'),
+    path('user_logout/',user_logout,name='user_logout')
+
+
+
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
